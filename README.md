@@ -15,30 +15,37 @@ The work focuses on:
 
 The ultimate goal is to reduce financial losses from missed fraud (false negatives) while minimising customer friction from incorrect flags (false positives).
 
-## Repository Structure
+### Repository Structure
+
+```plaintext
 fraud-detection/
 ├── .vscode/
 │   └── settings.json
 ├── .github/
 │   └── workflows/
 │       └── unittests.yml
-├── data/
-│   ├── raw/                  # Original datasets (gitignored)
-│   └── processed/            # Cleaned and engineered datasets
+├── data/                           # Add this folder to .gitignore
+│   ├── raw/                        # Original datasets
+│   └── processed/                  # Cleaned and feature-engineered data
 ├── notebooks/
+│   ├── __init__.py
 │   ├── eda-fraud-data.ipynb
 │   ├── eda-creditcard.ipynb
 │   ├── feature-engineering.ipynb
 │   ├── modeling.ipynb
 │   ├── shap-explainability.ipynb
 │   └── README.md
-├── src/                      # Custom modules (currently empty)
-├── tests/                    # Unit tests (currently empty)
-├── models/                   # Saved model artifacts (.pkl)
-├── scripts/                  # Reusable scripts (optional)
+├── src/
+│   ├── __init__.py
+├── tests/
+│   ├── __init__.py
+├── models/                         # Saved model artifacts
+├── scripts/
+│   ├── __init__.py
+│   └── README.md
 ├── requirements.txt
-├── .gitignore
-└── README.md                 # This file
+├── README.md
+└── .gitignore
 ## Setup & Installation
 
 1. Clone the repository:
