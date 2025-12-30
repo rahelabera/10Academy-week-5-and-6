@@ -46,6 +46,7 @@ fraud-detection/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+```
 ## Setup & Installation
 
 1. Clone the repository:
